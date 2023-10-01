@@ -67,12 +67,14 @@ function App(props) {
         search: `?resident=${resident_id}`,
       });
       SetResident(resident_id);
+      SetApartment("");
     } else if (id === "apartment_name") {
       history.push({
         pathname: "/feed",
         search: `?apartment=${apartment_id}`,
       });
       SetApartment(apartment_id);
+      SetResident("");
     }
   };
 
